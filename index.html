@@ -1,0 +1,31 @@
+<DOCTYPE! html>
+<html>
+<head>
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+	integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
+	crossorigin="anonymous">
+</head>
+
+<body onload="loadOGSL()">
+	
+	<div class="container ml-0 mt-3">
+		<div class="input-group mb-3">
+	    	<span class="input-group-text" id="basic-addon1">Search</span>
+	  		<input id="searchBox" type="text" class="form-control" 
+				aria-label="Username" aria-describedby="basic-addon1" onkeydown="pressSubmit()">
+		</div>
+
+	</div>
+
+	<div class="container ml-0">
+		<div id="result">Search for a sign value, e.g., šu, dam2, ha, 'a4, or unugx.<br>
+		The values are pulled from <a href="http://oracc.museum.upenn.edu/ogsl/">Oracc's Global Sign List</a>.
+		</div>
+	</div>
+	
+	<div id="end"></div>
+
+</body>
+</html>
